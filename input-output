@@ -1,0 +1,36 @@
+List<string> nameList = [];
+
+
+Console.WriteLine("Hej och välkommen.");
+
+
+
+string answer = ""; 
+
+do
+{
+    Console.Write("Ange ett namn: ");
+    string input_name = Console.ReadLine();
+
+    if (!string.IsNullOrEmpty(input_name))
+    {
+        nameList.Add(input_name);
+    }
+
+    Console.Write("Vill du ange ett till namn? (y/n): ");
+    answer = Console.ReadLine();
+}
+while (answer == "y");
+
+Console.Clear();
+
+Console.WriteLine("Du har angett följande namn:");
+
+foreach (string name in nameList)
+{
+    Console.WriteLine(name);
+}
+
+
+Console.ReadKey();
+
