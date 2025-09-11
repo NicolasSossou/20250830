@@ -1,4 +1,4 @@
-﻿Console.WriteLine("hello, world");
+﻿Console.Write("skriv ditt age: ");
 
 string Input_age = Console.ReadLine();
 
